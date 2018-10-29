@@ -23,7 +23,8 @@ const takeScreenshot = async(url) =>{
     console.log(status)
 
     var nomedosite = mudasite(url)
-    await page.render(`${nomedosite}.png`)
+    agora = new Date
+    await page.render(`${nomedosite}+${agora}.png`)
     await instance.exit()
 }
 
